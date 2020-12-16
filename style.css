@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+
+.heading{
+    font-size: 2.7em;
+    font-weight: 600;
+    text-align: center;
+    color: #276161;
+    font-family: 'Euphoria Script', cursive;
+}
+
+.invite{
+    width: 60%;
+}
+.poem{
+    font-size: 1.7em;
+    text-align: center;
+    color: #276161;
+    font-family: 'Euphoria Script', cursive;
+}
+
+.rsvp{
+    width: 40%;
+    height: 1400px;
+}
+.rsvp iframe{
+    margin-top: -12px;
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    object-fit: cover;
+    max-width: 100%;
+    margin: auto;
+    height: 75vh;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        padding-top: 0;
+    }
+    .heading{
+        font-size: 2em;
+    }
+    .poem{
+        font-size: 1.3em;
+    }
+    .invite, .rsvp{
+        width: 100%;
+    }
+    img{
+        height: 40vh;
+    }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255, 0, 0, 0); 
+}
